@@ -1,0 +1,41 @@
+2023-12-19 23:45:06.993  INFO 1936 --- [main] com.example.Application                  : Starting Application on LAPTOP-VLMU04PU with PID 1936 (started by 日落 in E:\学习\数据库课设\deliciousFoods-main)
+2023-12-19 23:45:07.001  INFO 1936 --- [main] com.example.Application                  : No active profile set, falling back to default profiles: default
+2023-12-19 23:45:07.612  WARN 1936 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example]' package. Please check your configuration.
+2023-12-19 23:45:08.006  WARN 1936 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library failed to load. The error reported was [D:\tomcat\apache-tomcat-9.0.76\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+
+java.lang.UnsatisfiedLinkError: D:\tomcat\apache-tomcat-9.0.76\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method) ~[na:1.8.0_361]
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1937) ~[na:1.8.0_361]
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1853) ~[na:1.8.0_361]
+	at java.lang.Runtime.loadLibrary0(Runtime.java:843) ~[na:1.8.0_361]
+	at java.lang.System.loadLibrary(System.java:1134) ~[na:1.8.0_361]
+	at org.apache.tomcat.jni.Library.<init>(Library.java:69) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.jni.Library.initialize(Library.java:206) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198) [tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107) [tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:79) [tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:164) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:152) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:540) [spring-context-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.0.RELEASE.jar:2.1.0.RELEASE]
+	at com.example.Application.main(Application.java:15) [classes/:na]
+
+2023-12-19 23:45:08.103  INFO 1936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-19 23:45:08.149  INFO 1936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-19 23:45:08.149  INFO 1936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-12-19 23:45:08.274  INFO 1936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-19 23:45:08.274  INFO 1936 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1228 ms
+2023-12-19 23:45:08.304  INFO 1936 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-12-19 23:45:08.308  INFO 1936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-12-19 23:45:08.308  INFO 1936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-12-19 23:45:08.309  INFO 1936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-12-19 23:45:08.309  INFO 1936 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-12-19 23:45:09.158  INFO 1936 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-12-19 23:45:09.405  INFO 1936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-19 23:45:09.407  INFO 1936 --- [main] com.example.Application                  : Started Application in 2.857 seconds (JVM running for 4.146)
